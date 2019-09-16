@@ -5,7 +5,7 @@ public class Bullet_fire : MonoBehaviour
 {
 	//getting the required gameobject properties
 	public GameObject bulletEmitter;
-	public GameObject Bullet;
+	public GameObject bullet;
 
 	//speed of the buller
 	public float bulletForwardForce;
@@ -17,7 +17,7 @@ public class Bullet_fire : MonoBehaviour
 		{
 			//The Bullet instantiation.
 			GameObject BulletGameObject;
-			Temporary_Bullet_Handler = Instantiate(Bullet,bulletEmitter.transform.position,bulletEmitter.transform.rotation) as GameObject;
+			Temporary_Bullet_Handler = Instantiate(bullet,bulletEmitter.transform.position,bulletEmitter.transform.rotation) as GameObject;
 			
 			//Retrieve the Rigidbody component from the instantiated Bullet and control it.
 			Rigidbody Temporary_RigidBody;
